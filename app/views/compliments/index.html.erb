@@ -1,0 +1,9 @@
+<h1>Random Compliment</h1>
+<% if @compliment.present? %>
+  <p><%= @compliment.message %></p>
+<% else %>
+  <p>No compliments found. Be the first to add one!</p>
+  <% if user_signed_in? %>
+    <%= link_to "Add New Compliment", new_compliment_path, class: "btn btn-primary" %>
+  <% end %>
+<% end %>

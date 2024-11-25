@@ -1,0 +1,8 @@
+<h1>Edit Compliment</h1>
+<%= form_with model: @compliment, local: true do |form| %>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_field :message, class: "form-control" %>
+  </div>
+  <%= form.submit "Update", class: "btn btn-primary" %>
+<% end %>

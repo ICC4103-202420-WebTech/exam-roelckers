@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts "Creating initial compliments..."
+Compliment.create([
+  { message: 'You are awesome!' },
+  { message: 'Keep up the great work!' },
+  { message: 'You make a difference!' },
+  { message: 'You are the best!' },
+  { message: 'You are doing greate!' },
+  { message: 'You are doing awesome!' },
+  { message: 'You are the goat!' }
+])
+puts "Done seeding!"
